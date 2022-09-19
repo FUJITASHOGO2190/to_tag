@@ -1,0 +1,14 @@
+<%= form_with model: @post, id: "new_post", local: true do |f| %>
+
+   <div class="message-field">
+    <%= f.text_field :text, placeholder: "入力してください" %>
+   </div>
+   <div class="image-field">
+    <div class="click-upload">
+      <%= f.file_field :image %>
+    </div>
+   </div>
+   <div class="submit-btn">
+    <%= f.submit "送信" %>
+   </div>
+<% end %>
