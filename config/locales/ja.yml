@@ -1,0 +1,6 @@
+ja:
+  activerecord:
+    attributes:
+      post:
+        text: テキスト
+        image: 画像
