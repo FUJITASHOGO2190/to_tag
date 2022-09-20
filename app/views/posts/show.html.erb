@@ -1,0 +1,12 @@
+<h3>詳細ページ</h3>
+<div class="posted-content">
+  <%= image_tag @post.image  %>
+  <table>
+    <tr>
+      <th>
+        <td><%= @post.text%></td>
+      </th>
+    </tr>
+  </table>
+  <%= link_to "編集", edit_post_path(@post.id) %>
+</div>
