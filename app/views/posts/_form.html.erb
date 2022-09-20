@@ -1,5 +1,5 @@
 <%= form_with model: @post, id: "new_post", local: true do |f| %>
-
+<%= render "shared/error_message", model: f.object %>
    <div class="message-field">
     <%= f.text_field :text, placeholder: "入力してください" %>
    </div>
